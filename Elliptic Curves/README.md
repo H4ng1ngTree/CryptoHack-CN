@@ -9,14 +9,14 @@ title: Elliptic Curves
 
 ## 页面规范
 
-每道题目单独一个页面，固定包含：
+每道题目单独一个目录，固定包含：
 
-1. 原文题目
-2. 翻译题目
-3. 我的个人解答
-4. Flag / 最终答案
-5. 代码思路
+1. `original.md`：原文题目
+2. `translation.md`：中文翻译
+
+个人解答由我后续自行补充，不在搬运翻译阶段生成。
 
 ## 题目索引
 
-- [Point Negation](./point-negation/)
+- [Point Negation](./Point%20Negation/)
+- [Point Addition](./Point%20Addition/)
