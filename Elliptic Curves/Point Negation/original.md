@@ -1,13 +1,29 @@
-﻿# Point Negation
+# Point Negation
 
-For all the challenges in the starter set, we will be working with the elliptic curve
+**10 pts - 6118 Solves**
 
-```text
-E: Y^2 = X^3 + 497X + 1768 mod 9739
-```
+Source: <https://cryptohack.org/challenges/ecc/>
 
-Using the above curve, and the point `P(8045, 6936)`, find the point `Q(x, y)` such that `P + Q = O`.
+## Clean transcription
 
-Remember, we're working in a finite field now, so you'll need to correctly handle negative numbers.
+For the starter challenges, use the curve:
+
+$$
+E : Y^2 = X^3 + 497X + 1768 \pmod{9739}
+$$
+
+Given:
+
+$$
+P=(8045,6936)
+$$
+
+find a point $Q(x,y)$ such that:
+
+$$
+P+Q=O
+$$
+
+> Work in the finite field, so negative coordinates must be handled modulo $p$.
 
 Enter flag here: `crypto{x,y}`
