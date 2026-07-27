@@ -6,6 +6,14 @@
 
 ## 中文翻译
 
-一道服务交互题，涉及标量乘法、可提交的基点以及两分钟时限。连接地址：`socket.cryptohack.org 13416`。文件：`13416.py`。
+我实现了另一道题中的标量乘法。它已经足够安全，所以你不可能猜出我的私钥！
 
-在此输入 flag：`crypto{...}`
+你可以发送**两个**基点，我给你**两分钟**来证明我错了。
+
+连接地址：`socket.cryptohack.org 13416`
+
+**题目文件：**
+
+- [13416.py](https://cryptohack.org/static/challenges/13416_dd153eac2721ba79d1fb34d574791d15.py)
+
+题目贡献者：[Aloof](https://cryptohack.org/user/Aloof)

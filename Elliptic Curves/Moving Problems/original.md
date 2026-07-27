@@ -1,11 +1,13 @@
 # Moving Problems
 
-**150 pts - 1799 Solves**
+**150 pts - 1803 Solves**
 
 Source: <https://cryptohack.org/challenges/ecc/>
 
-## Clean transcription
+## Original challenge
 
-A challenge hinting at pairings through the theme of lemons and pairs. Challenge files: `source.sage`, `output.txt`.
+I've learnt that when life gives you lemons, if you look at things the right way they taste just like pairs.
 
-Enter flag here: `crypto{...}`
+**Challenge files:**
+- [source.sage](https://cryptohack.org/static/challenges/source_d3b18de2c91f41f6e7431fb9854cf74f.sage)
+- [output.txt](https://cryptohack.org/static/challenges/output_6dc28a4d1223789dc760b8ce9235a667.txt)

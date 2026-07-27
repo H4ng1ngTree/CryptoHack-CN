@@ -1,11 +1,13 @@
 # Micro Transmissions
 
-**120 pts - 1120 Solves**
+**120 pts - 1122 Solves**
 
 Source: <https://cryptohack.org/challenges/ecc/>
 
-## Clean transcription
+## Original challenge
 
-A challenge about tuning bit lengths for efficient data packets and calculations. Challenge files: `source.sage`, `output.txt`.
+Been fine tuning my bit lengths to ensure my data packages and calculation times are super efficient.
 
-Enter flag here: `crypto{...}`
+**Challenge files:**
+- [source.sage](https://cryptohack.org/static/challenges/source_78fc27e69b84e3cf75538d4bff66c4a8.sage)
+- [output.txt](https://cryptohack.org/static/challenges/output_aabbd844dd2b52cbab4978e8f0b3b95c.txt)

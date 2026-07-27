@@ -1,11 +1,14 @@
 # ProSign 3
 
-**100 pts - 1771 Solves**
+**100 pts - 1775 Solves**
 
 Source: <https://cryptohack.org/challenges/ecc/>
 
-## Clean transcription
+## Original challenge
 
-A timestamp signing service where a valid signature for `unlock` is required. Connect: `socket.cryptohack.org 13381`. File: `13381.py`.
+This is my secure timestamp signing server. Only if you can produce a signature for "unlock" can you learn more.
 
-Enter flag here: `crypto{...}`
+Connect at `socket.cryptohack.org 13381`
+
+**Challenge files:**
+- [13381.py](https://cryptohack.org/static/challenges/13381_7fd5a5da326879dc4a3995cad969a165.py)

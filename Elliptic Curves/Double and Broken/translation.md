@@ -6,6 +6,9 @@
 
 ## 中文翻译
 
-一道侧信道题，给出 Secp256k1 上多次标量乘法的功耗读数。提供 `source_snippet.py` 与 `collected_data.txt`。
+我们已经设法获得了 Secp256k1 曲线上标量乘法的功耗读数。你能否从 50 次重复乘法的数据转储中恢复私钥？
 
-在此输入 flag：`crypto{...}`
+**题目文件：**
+
+- [source_snippet.py](https://cryptohack.org/static/challenges/source_snippet_0b89127bb905d47db49281e0449d6bd6.py)
+- [collected_data.txt](https://cryptohack.org/static/challenges/collected_data_3b1eecad8d7b9a4e92b93efcdbf8113b.txt)

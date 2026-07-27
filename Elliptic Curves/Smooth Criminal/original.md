@@ -1,11 +1,13 @@
 # Smooth Criminal
 
-**60 pts - 2895 Solves**
+**60 pts - 2898 Solves**
 
 Source: <https://cryptohack.org/challenges/ecc/>
 
-## Clean transcription
+## Original challenge
 
-An ECC encryption challenge involving a flag sent to Bob. Challenge files: `source.py`, `output.txt`.
+Spent my morning reading up on ECC and now I'm ready to start encrypting my messages. Sent a flag to Bob today, but you'll never read it.
 
-Enter flag here: `crypto{...}`
+**Challenge files:**
+- [source.py](https://cryptohack.org/static/challenges/source_ba064d03b53a5fd7321dd0007b72906b.py)
+- [output.txt](https://cryptohack.org/static/challenges/output_6cf0cf5ca7ab93bb829e557dd77e08ff.txt)

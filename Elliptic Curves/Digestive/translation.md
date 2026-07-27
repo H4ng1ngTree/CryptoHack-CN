@@ -6,6 +6,6 @@
 
 ## 中文翻译
 
-一道 ECDSA 主题 Web 题。入口：<https://web.cryptohack.org/digestive>。
+为了更好的消化健康，是否应该避免使用 ECDSA？
 
-在此输入 flag：`crypto{...}`
+访问：<https://web.cryptohack.org/digestive>

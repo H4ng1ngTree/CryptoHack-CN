@@ -4,8 +4,15 @@
 
 Source: <https://cryptohack.org/challenges/ecc/>
 
-## Clean transcription
+## Original challenge
 
-A service challenge involving modified curve parameters, one chosen base point, and a one-minute limit. Connect: `socket.cryptohack.org 13418`. File: `13418.py`.
+For more security, I made some changes on the curve parameters! This time, I am sure my private key cannot be found.
 
-Enter flag here: `crypto{...}`
+You are allowed to send one base point, and you have one minute to find my private key.
+
+Connect at `socket.cryptohack.org 13418`
+
+**Challenge files:**
+- [13418.py](https://cryptohack.org/static/challenges/13418_695b1481532c74b80c84a5e5f6956bb3.py)
+
+Challenge contributed by [Aloof](https://cryptohack.org/user/Aloof)

@@ -6,6 +6,10 @@
 
 ## 中文翻译
 
-一道服务交互题，背景是依赖受信任证书缓存的安全搜索系统。连接地址：`socket.cryptohack.org 13382`。文件：`13382.py`。
+这是我的安全搜索引擎，它只会搜索已存在于其受信任证书缓存中的主机。
 
-在此输入 flag：`crypto{...}`
+连接地址：`socket.cryptohack.org 13382`
+
+**题目文件：**
+
+- [13382.py](https://cryptohack.org/static/challenges/13382_edfe1f04767ab6d72d689fc13a002dcc.py)

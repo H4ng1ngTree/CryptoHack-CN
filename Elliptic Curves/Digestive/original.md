@@ -1,11 +1,11 @@
 # Digestive
 
-**60 pts - 827 Solves**
+**60 pts - 829 Solves**
 
 Source: <https://cryptohack.org/challenges/ecc/>
 
-## Clean transcription
+## Original challenge
 
-An ECDSA-themed web challenge. Play at: <https://web.cryptohack.org/digestive>.
+Should ECDSA be avoided for better digestive health?
 
-Enter flag here: `crypto{...}`
+Play at [https://web.cryptohack.org/digestive](https://web.cryptohack.org/digestive)

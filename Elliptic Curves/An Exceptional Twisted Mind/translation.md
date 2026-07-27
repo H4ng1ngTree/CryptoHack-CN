@@ -6,6 +6,14 @@
 
 ## 中文翻译
 
-一道服务交互题，只允许提交一个基点，并要求在 30 秒内恢复私钥。连接地址：`socket.cryptohack.org 13417`。文件：`13417.py`。
+最后这一次，我选择了一条非常安全的椭圆曲线。现在，我的私钥终于安全了。
 
-在此输入 flag：`crypto{...}`
+你可以发送**一个**基点，并且有 **30 秒** 时间来找出我的私钥。
+
+连接地址：`socket.cryptohack.org 13417`
+
+**题目文件：**
+
+- [13417.py](https://cryptohack.org/static/challenges/13417_ad4ad7eaab29474bcba890bad92ce145.py)
+
+题目贡献者：[Aloof](https://cryptohack.org/user/Aloof)

@@ -6,6 +6,10 @@
 
 ## 中文翻译
 
-一道时间戳签名服务题，需要构造针对 `unlock` 的有效签名。连接地址：`socket.cryptohack.org 13381`。文件：`13381.py`。
+这是我的安全时间戳签名服务器。只有当你能够为 `unlock` 生成一个签名时，才能了解更多内容。
 
-在此输入 flag：`crypto{...}`
+连接地址：`socket.cryptohack.org 13381`
+
+**题目文件：**
+
+- [13381.py](https://cryptohack.org/static/challenges/13381_7fd5a5da326879dc4a3995cad969a165.py)

@@ -1,39 +1,41 @@
 # Scalar Multiplication
 
-**35 pts - 4950 Solves**
+**35 pts - 4954 Solves**
 
 Source: <https://cryptohack.org/challenges/ecc/>
 
-## Clean transcription
+## Original challenge
 
-Scalar multiplication is repeated point addition, for example:
+Scalar multiplication of two points is defined by repeated addition: $[3]P = P + P + P$.
 
-$$
-[3]P=P+P+P
-$$
+In the next few challenges, we will use scalar multiplication to create a shared secret over an insecure channel similarly to the Diffie-Hellman challenges.
 
-This challenge introduces the double-and-add algorithm.
+Taken from "An Introduction to Mathematical Cryptography", *Jeffrey Hoffstein, Jill Pipher, Joseph H. Silverman*, the following algorithm will efficently calculate scalar multiplication of a point on an elliptic curve
 
 ```text
-Input:  P in E(F_p), integer n > 0
-Output: Q = [n]P in E(F_p)
+**Double and Add algorithm for the scalar multiplication**
+
+Input: P \in E(\mathbb{F}_p) and an integer n > 0
+Output: Q = [n]P \in E(\mathbb{F}_p)
 
 1. Set Q = P and R = O.
-2. While n > 0:
-   3. If n = 1 mod 2, set R = R + Q.
-   4. Set Q = [2]Q and n = floor(n / 2).
-   5. Continue while n > 0.
-6. Return R.
+2. Loop while n > 0.
+3. If n \equiv 1 \mod 2, set R = R + Q.
+4. Set Q = [2] Q and n = \lfloor n/2 \rfloor.
+5. If n > 0, continue with loop at Step 2.
+6. Return the point R, which equals [n]P.
 ```
 
-Use:
+> This is not the most efficient algorithm, there are many interesting ways to improve this calculation up, but this will be sufficient for our work.
+
+We will work with the following elliptic curve, and prime:
 
 $$
-E : Y^2 = X^3 + 497X + 1768 \pmod{9739}
+E: Y^2 = X^3 + 497 X + 1768 \mod 9739
 $$
 
-> Test value: for $X=(5323,5438)$, assert $[1337]X=(1089,6931)$.
+> You can test your algorithm by asserting: $[1337] X = (1089, 6931)$ for $X = (5323, 5438)$.
 
-Given $P=(2339,2213)$, find $Q(x,y)=[7863]P$.
+Using the above curve, and the points $P = (2339, 2213)$, find the point $Q(x,y) = [7863] P$ by implementing the above algorithm.
 
-Enter flag here: `crypto{x,y}`
+> After calculating $Q$, substitute the coordinates into the curve. Assert that the point $Q$ is in $E(\mathbb{F}_p)$.

@@ -1,31 +1,28 @@
 # Curves and Logs
 
-**40 pts - 4712 Solves**
+**40 pts - 4716 Solves**
 
 Source: <https://cryptohack.org/challenges/ecc/>
 
-## Clean transcription
+## Original challenge
 
-This challenge introduces the elliptic-curve discrete logarithm problem and elliptic-curve Diffie-Hellman key exchange.
+The Elliptic Curve Discrete Logarithm Problem (ECDLP) is the problem of finding an integer $n$ such that $Q = [n]P$.
 
-Use:
+Like we encountered with the discrete logarithm problem, scalar multiplication of a point in $E(\mathbb{F}_p)$ seems to be be a hard problem to undo, with the most efficient algorithm running at $q^{1/2}$ time when $P$ generates a subgroup of size $q$.
 
-$$
-E : Y^2 = X^3 + 497X + 1768 \pmod{9739},\quad G=(1804,5368)
-$$
+This makes it a great candidate for a trapdoor function.
 
-Alice sends:
+Alice and Bob are talking and they want to create a shared secret so they can start encrypting their messages with some symmetric cryptographic protocol Alice and Bob don't trust their connection, so they need a way to create a secret others can't replicate.
 
-$$
-Q_A=(815,3190)
-$$
+To start thing off, Alice and Bob agree on a curve $E$, a prime $p$ and a generator point $G$ which generates a subgroup $H = \langle G \rangle$ of prime order $q$
 
-Your secret integer is:
+> In elliptic curve cryptography, it is important that the order of $G$ is prime. Constructing secure curves is complicated and it is recommended to use a preconstructed curve where a client is given the curve, the prime and the generator to use.
 
-$$
-n_B=1829
-$$
+The Elliptic Curve Diffie-Hellman Key Exchange goes as follows:
 
-Compute the shared secret. Then hash the decimal string representation of the shared secret's $x$-coordinate with SHA-1. The hexadecimal digest is the flag.
-
-> The starter curve is intentionally small and not cryptographically secure.
+- Alice generates a secret random integer $n_A$ and calculates $Q_A = [n_A]G$
+- Bob generates a secret random integer $n_B$ and calculates $Q_B = [n_B]G$
+- Alice sends Bob $Q_A$, and Bob sends Alice $Q_B$. Due to the hardness of ECDLP, an onlooker Eve is unable to calculate $n_{A/B}$ in reasonable time.
+- Alice then calculates $[n_A]Q_B$, and Bob calculates $[n_B]Q_A$.
+- Due to the associativity of scalar multiplication, $S = [n_A]Q_B = [n_B]Q_A$.
+- Alice and Bob can use $S$ as their shared secret.

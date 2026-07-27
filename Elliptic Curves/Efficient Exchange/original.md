@@ -1,40 +1,36 @@
 # Efficient Exchange
 
-**50 pts - 4264 Solves**
+**50 pts - 4268 Solves**
 
 Source: <https://cryptohack.org/challenges/ecc/>
 
-## Clean transcription
+## Original challenge
 
-This challenge considers an elliptic-curve Diffie-Hellman exchange in which only the $x$-coordinate of Alice's public key is sent.
+Alice and Bob are looking at the Elliptic Curve Discrete Logarithm Problem and thinking about the data they send.
 
-For these challenges, the prime satisfies:
+They want to try and keep their data transfer as efficient as possible and realise that sending both the $x$ and $y$ coordinate of their public key isn't necessary.
 
-$$
-p \equiv 3 \pmod{4}
-$$
+As long as Alice and Bob agree on the curve parameters, there are only ever two possible values of $y$ for a given $x$.
 
-Use:
+In fact, given *either* of the values of $y$ permissible from the value $x$ they receive, the $x$ coordinate of their shared secret will be the same.
 
-$$
-E : Y^2 = X^3 + 497X + 1768 \pmod{9739},\quad G=(1804,5368)
-$$
+> For these challenges, we have used a prime $p \equiv 3 \mod 4$, which will help you find $y$ from $y^{2}$.
 
-Alice sends:
+Using the curve, prime and generator:
 
 $$
-x(Q_A)=4726
+E: Y^{2} = X^{3} + 497 X + 1768 \mod 9739, \quad G: (1804,5368)
 $$
 
-Your secret integer is $n_B=6534$. Compute the shared secret and use `decrypt.py` with:
+Calculate the shared secret after Alice sends you $x(Q_A) = 4726$, with your secret integer $n_B = 6534$.
 
-```python
-{
-    'iv': 'cd9da9f1c60925922377ea952afc212c',
-    'encrypted_flag': 'febcbe3a3414a730b125931dccf912d2239f3e969c4334d95ed0ec86f6449ad8'
-}
+Use the `decrypt.py` file to decode the flag
+
+```text
+{'iv': 'cd9da9f1c60925922377ea952afc212c', 'encrypted_flag': 'febcbe3a3414a730b125931dccf912d2239f3e969c4334d95ed0ec86f6449ad8'}
 ```
 
-## Challenge files
+> You can specify which of the two possible values your public $y$ coordinate has taken by sending only one bit. Try and think about how you could do this. How are the two $y$ values related to each other?
 
-- `decrypt.py`
+**Challenge files:**
+- [decrypt.py](https://cryptohack.org/static/challenges/decrypt_08c0fede9185868aba4a6ae21aca0148.py)

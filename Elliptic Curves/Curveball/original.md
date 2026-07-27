@@ -1,11 +1,14 @@
 # Curveball
 
-**100 pts - 2096 Solves**
+**100 pts - 2102 Solves**
 
 Source: <https://cryptohack.org/challenges/ecc/>
 
-## Clean transcription
+## Original challenge
 
-A service challenge about a secure search engine and trusted certificate cache. Connect: `socket.cryptohack.org 13382`. File: `13382.py`.
+Here's my secure search engine, which will only search for hosts it has in its trusted certificate cache.
 
-Enter flag here: `crypto{...}`
+Connect at `socket.cryptohack.org 13382`
+
+**Challenge files:**
+- [13382.py](https://cryptohack.org/static/challenges/13382_edfe1f04767ab6d72d689fc13a002dcc.py)

@@ -1,11 +1,15 @@
 # No Random, No Bias
 
-**120 pts - 718 Solves**
+**120 pts - 719 Solves**
 
 Source: <https://cryptohack.org/challenges/ecc/>
 
-## Clean transcription
+## Original challenge
 
-A signature-generation challenge about replacing bad randomness with a deterministic-looking method. Challenge files: `source.py`, `output.txt`.
+Relying on randomness is bad with a bad entropy source, so I got rid of it and changed to a better signature generation method.
 
-Enter flag here: `crypto{...}`
+**Challenge files:**
+- [source.py](https://cryptohack.org/static/challenges/source_a911b46ac71942190489524c4456a1be.py)
+- [output.txt](https://cryptohack.org/static/challenges/output_b141b43860f2ca53f0e36df40f42f2db.txt)
+
+Challenge contributed by [aloof](https://cryptohack.org/user/aloof)

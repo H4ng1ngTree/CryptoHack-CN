@@ -4,8 +4,15 @@
 
 Source: <https://cryptohack.org/challenges/ecc/>
 
-## Clean transcription
+## Original challenge
 
-A service challenge involving scalar multiplication, chosen base points, and a two-minute limit. Connect: `socket.cryptohack.org 13416`. File: `13416.py`.
+I implemented the scalar multiplication from another challenge. It is secure enough, so you will never guess my private key!
 
-Enter flag here: `crypto{...}`
+You are allowed to send *two* base points, and I give you *two minutes* to prove me wrong.
+
+Connect at `socket.cryptohack.org 13416`
+
+**Challenge files:**
+- [13416.py](https://cryptohack.org/static/challenges/13416_dd153eac2721ba79d1fb34d574791d15.py)
+
+Challenge contributed by [Aloof](https://cryptohack.org/user/Aloof)

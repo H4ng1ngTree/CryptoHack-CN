@@ -4,8 +4,10 @@
 
 Source: <https://cryptohack.org/challenges/ecc/>
 
-## Clean transcription
+## Original challenge
 
-A parameter-choice challenge claiming that the curve has prime order. Challenge files: `source.sage`, `output.txt`.
+Learning from my mistakes... This time I've ensured my curve is of prime order. This flag will be safe forever.
 
-Enter flag here: `crypto{...}`
+**Challenge files:**
+- [source.sage](https://cryptohack.org/static/challenges/source_51cefb9344efd163a8f0c62470aac279.sage)
+- [output.txt](https://cryptohack.org/static/challenges/output_db96ba0b779440f32de9b556d0514b35.txt)

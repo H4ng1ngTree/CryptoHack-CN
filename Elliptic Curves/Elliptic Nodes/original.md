@@ -4,8 +4,10 @@
 
 Source: <https://cryptohack.org/challenges/ecc/>
 
-## Clean transcription
+## Original challenge
 
-A challenge where curve parameters $a$ and $b$ are selected privately. Challenge files: `output.txt`, `source.py`.
+I've included an extra layer of security by picking my own curve parameters `a,b` and keeping them secret.
 
-Enter flag here: `crypto{...}`
+**Challenge files:**
+- [output.txt](https://cryptohack.org/static/challenges/output_470597e226bbe018d357db4af841ef48.txt)
+- [source.py](https://cryptohack.org/static/challenges/source_4755240157baa8a69793602383932b17.py)
