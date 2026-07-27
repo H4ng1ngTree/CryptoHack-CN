@@ -5,7 +5,13 @@ title: CryptoHack Notes
 
 # CryptoHack Notes
 
-请从这里进入各个分类：
+这里整理 CryptoHack 题目的：
+
+- 原文题目
+- 精译题目
+- 我的个人解答
+
+## 分类
 
 - [Elliptic Curves](./Elliptic%20Curves/)
 
