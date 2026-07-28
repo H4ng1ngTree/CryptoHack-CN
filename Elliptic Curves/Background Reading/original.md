@@ -38,20 +38,26 @@ This brings us to the point of defining an elliptic curve.
 
 **Definition**: An elliptic curve $E$ is the set of solutions to a Weierstrass equation
 
-$E: Y^{2} = X^{3} + a X + b$
+$$
+E: Y^{2} = X^{3} + a X + b
+$$
 
 together with a point at infinity $O$. The constants $a,b$ must satisfy the relationship
 
-$4a^{3} + 27 b^{2} \neq 0$
+$$
+4a^{3} + 27 b^{2} \neq 0
+$$
 
 to ensure there are no singularities on the curve.
 
 Formally, let E be an elliptic curve, point addition has the following properties
 
-(a) $P + O = O + P = P$
-(b) $P + (-P) = O$
-(c) $(P + Q) + R = P + (Q + R)$
-(d) $P + Q = Q + P$
+```text
+(a) P + O = O + P = P
+(b) P + (-P) = O
+(c) (P + Q) + R = P + (Q + R)
+(d) P + Q = Q + P
+```
 
 In ECC, we study elliptic curves over a finite field $\mathbb{F}_p$. This means we look at the curve modulo the characteristic $p$ and an elliptic curve will no longer be a curve, but a collection of points whose $x,y$ coordinates are integers in $\mathbb{F}_p$.
 

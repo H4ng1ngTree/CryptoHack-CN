@@ -26,3 +26,15 @@ The Elliptic Curve Diffie-Hellman Key Exchange goes as follows:
 - Alice then calculates $[n_A]Q_B$, and Bob calculates $[n_B]Q_A$.
 - Due to the associativity of scalar multiplication, $S = [n_A]Q_B = [n_B]Q_A$.
 - Alice and Bob can use $S$ as their shared secret.
+
+Using the following curve, prime and generator:
+
+$$
+E: Y^{2} = X^{3} + 497 X + 1768 \mod 9739, \quad G: (1804,5368)
+$$
+
+When Alice sends you $Q_A = (815, 3190)$ and your secret integer is $n_B = 1829$, calculate the shared secret.
+
+Then calculate the SHA1 hash of the shared secret's $x$ coordinate: take the integer representation of the coordinate and cast it to a string. The resulting hexadecimal digest is the flag.
+
+> This curve is not cryptographically secure! We picked a small prime for these starter challenges so that you can calculate quickly while learning. Real secure curves usually use primes of around 256 bits.

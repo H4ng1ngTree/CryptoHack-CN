@@ -15,7 +15,7 @@ Timing attacks against ECDSA signing can leak information about the nonce, which
 A key component of constant time algorithms for scalar multiplication for points on elliptic curves are based on Montgomery's Ladder. In this challenge, the aim is to implement the most basic version of this: Montgomery’s binary algorithm in the group $E(\mathbb{F}_p)$.
 
 ```text
-**Montgomery’s binary algorithm in the group** E(\mathbb{F}_p)
+Montgomery’s binary algorithm in the group E(\mathbb{F}_p)
 
 Input: P \in E(\mathbb{F}_p) and an n-bit integer k = \sum 2^i k_i where k_{n-1} = 1
 Output: [k]P \in E(\mathbb{F}_p)
@@ -42,7 +42,7 @@ Using the above curve, and the generator point with `G.x = 9`, find the $x$-coor
 This curve is in Montgomery form, rather than Weierstrass like many of the curves in these challenges. Although this curve can be mapped to Weierstrass form and old doubling and addition formula can be reused, we recommend working directly with the formula for Montgomery curves: $ E : By^{2} = x^{3} + Ax^{2} + x$. To encourage this, we give the addition and doubling formulas for the curve in affine coordinates. Please see [Montgomery curves and the Montgomery ladder](https://eprint.iacr.org/2017/293.pdf) for a beautiful and fast set of formula in projective coordinates.
 
 ```text
-**Addition formula for Montgomery Curve (Affine)**
+Addition formula for Montgomery Curve (Affine)
 
 Input: P, Q \in E(\mathbb{F}_p) with P \neq Q
 Output: R = (P + Q) \in E(\mathbb{F}_p)
@@ -54,7 +54,7 @@ y_{3} = \alpha (x_{1} - x_{3}) - y_{1} R = (x_{3}, y_{3})
 ```
 
 ```text
-**Doubling formula for Montgomery Curve (Affine)**
+Doubling formula for Montgomery Curve (Affine)
 
 Input: P \in E(\mathbb{F}_p)
 Output: R = [2]P \in E(\mathbb{F}_p)

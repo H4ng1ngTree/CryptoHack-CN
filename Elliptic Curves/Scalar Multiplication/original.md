@@ -13,7 +13,7 @@ In the next few challenges, we will use scalar multiplication to create a shared
 Taken from "An Introduction to Mathematical Cryptography", *Jeffrey Hoffstein, Jill Pipher, Joseph H. Silverman*, the following algorithm will efficently calculate scalar multiplication of a point on an elliptic curve
 
 ```text
-**Double and Add algorithm for the scalar multiplication**
+Double and Add algorithm for the scalar multiplication
 
 Input: P \in E(\mathbb{F}_p) and an integer n > 0
 Output: Q = [n]P \in E(\mathbb{F}_p)

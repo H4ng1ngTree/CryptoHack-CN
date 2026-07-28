@@ -5,11 +5,11 @@
     - title: "Background Reading"
       url: "/Elliptic%20Curves/Background%20Reading/"
       group: "Background"
-      has_wp: false
+      has_wp: true
     - title: "Point Negation"
       url: "/Elliptic%20Curves/Point%20Negation/"
       group: "Starter"
-      has_wp: false
+      has_wp: true
     - title: "Point Addition"
       url: "/Elliptic%20Curves/Point%20Addition/"
       group: "Starter"

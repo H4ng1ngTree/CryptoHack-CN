@@ -13,7 +13,7 @@ It turns out that there is an efficient algorithm for calculating the point addi
 Taken from "An Introduction to Mathematical Cryptography", *Jeffrey Hoffstein, Jill Pipher, Joseph H. Silverman*, the following algorithm will calculate the addition of two points on an elliptic curve
 
 ```text
-**Algorithm for the addition of two points: P + Q**
+Algorithm for the addition of two points: P + Q
 
 (a) If P = O, then P + Q = Q.
 (b) Otherwise, if Q = O, then P + Q = P.
