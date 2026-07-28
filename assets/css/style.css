@@ -214,3 +214,31 @@ mjx-container {
   overflow-y: hidden;
   max-width: 100%;
 }
+.challenge-groups {
+  display: grid;
+  gap: 1.15rem;
+}
+.challenge-group {
+  border: 1px solid var(--line);
+  border-radius: .85rem;
+  background: rgba(255, 255, 255, .48);
+  padding: .85rem;
+}
+.challenge-group-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .1rem .15rem .75rem;
+}
+.challenge-group-head h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+.challenge-group-head span {
+  color: var(--muted);
+  font-size: .88rem;
+}
+.muted-note {
+  color: var(--muted);
+}
