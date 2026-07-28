@@ -16,4 +16,4 @@
 
 - [13419.py](https://cryptohack.org/static/challenges/13419_b1d972f9f40f4d7140def981e7cf5d2e.py)
 
-题目贡献者：[$in](https://cryptohack.org/user/$in)
+题目贡献者：[in](https://cryptohack.org/user/$in)

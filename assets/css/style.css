@@ -209,3 +209,8 @@ pre code { padding: 0; background: transparent; }
   .collection-overview { grid-template-columns: 1fr; }
   .challenge-section-head { align-items: flex-start; flex-direction: column; gap: .2rem; }
 }
+mjx-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
