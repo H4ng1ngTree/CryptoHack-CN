@@ -3,104 +3,333 @@ layout: default
 title: Elliptic Curves
 ---
 
-<section class="collection-hero">
+<section class="collection-hero collection-hero-compact">
   <div class="breadcrumb"><a href="{{ '/' | relative_url }}">首页</a><span>/</span><span>Elliptic Curves</span></div>
   <p class="eyebrow">Challenge Set</p>
   <h1>Elliptic Curves</h1>
-  <p class="lead">本题目集共 23 道题。进入单题页后，英语题面固定显示；中文题面和我的解答默认折叠，按需展开。</p>
+  <p class="lead">这一页只负责目录和跳转：先看题目列表，进入单题后再看固定英文题面、展开中文精翻或展开我的解答。</p>
 </section>
 
-<div class="challenge-list">
-  <a class="challenge-item" href="A%20Twisted%20Mind/">
-    <span class="challenge-item-title">A Twisted Mind</span>
-    <span class="pill pill-todo">待写 WP</span>
+<section class="collection-overview" aria-label="题目集概览">
+  <div class="overview-card overview-main">
+    <h2>阅读顺序</h2>
+    <ol>
+      <li>先从题目卡片进入单题页。</li>
+      <li>默认先读英文题面，保持原题语境。</li>
+      <li>需要时展开中文精翻，对照理解细节。</li>
+      <li>最后展开我的解答，按思路复盘。</li>
+    </ol>
+  </div>
+  <div class="overview-card progress-card">
+    <h2>整理进度</h2>
+    <div class="progress-number">1<span>/ 23</span></div>
+    <div class="progress-track"><span style="width: 4%"></span></div>
+    <p>1 道已写 WP，22 道待补题解。</p>
+  </div>
+</section>
+
+<div class="challenge-section-head">
+  <h2>题目列表</h2>
+  <span>23 challenges</span>
+</div>
+<div class="challenge-grid">
+  <a class="challenge-card" href="A%20Twisted%20Mind/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">01</span>
+      <div>
+        <h3>A Twisted Mind</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="An%20Evil%20Twisted%20Mind/">
-    <span class="challenge-item-title">An Evil Twisted Mind</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="An%20Evil%20Twisted%20Mind/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">02</span>
+      <div>
+        <h3>An Evil Twisted Mind</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="An%20Exceptional%20Twisted%20Mind/">
-    <span class="challenge-item-title">An Exceptional Twisted Mind</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="An%20Exceptional%20Twisted%20Mind/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">03</span>
+      <div>
+        <h3>An Exceptional Twisted Mind</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="Background%20Reading/">
-    <span class="challenge-item-title">Background Reading</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="Background%20Reading/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">04</span>
+      <div>
+        <h3>Background Reading</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="Checkpoint/">
-    <span class="challenge-item-title">Checkpoint</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="Checkpoint/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">05</span>
+      <div>
+        <h3>Checkpoint</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="Curveball/">
-    <span class="challenge-item-title">Curveball</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="Curveball/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">06</span>
+      <div>
+        <h3>Curveball</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="Curves%20and%20Logs/">
-    <span class="challenge-item-title">Curves and Logs</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="Curves%20and%20Logs/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">07</span>
+      <div>
+        <h3>Curves and Logs</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="Digestive/">
-    <span class="challenge-item-title">Digestive</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="Digestive/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">08</span>
+      <div>
+        <h3>Digestive</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="Double%20and%20Broken/">
-    <span class="challenge-item-title">Double and Broken</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="Double%20and%20Broken/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">09</span>
+      <div>
+        <h3>Double and Broken</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="Edwards%20Goes%20Degenerate/">
-    <span class="challenge-item-title">Edwards Goes Degenerate</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="Edwards%20Goes%20Degenerate/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">10</span>
+      <div>
+        <h3>Edwards Goes Degenerate</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="Efficient%20Exchange/">
-    <span class="challenge-item-title">Efficient Exchange</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="Efficient%20Exchange/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">11</span>
+      <div>
+        <h3>Efficient Exchange</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="Elliptic%20Nodes/">
-    <span class="challenge-item-title">Elliptic Nodes</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="Elliptic%20Nodes/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">12</span>
+      <div>
+        <h3>Elliptic Nodes</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="Exceptional%20Curves/">
-    <span class="challenge-item-title">Exceptional Curves</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="Exceptional%20Curves/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">13</span>
+      <div>
+        <h3>Exceptional Curves</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="Micro%20Transmissions/">
-    <span class="challenge-item-title">Micro Transmissions</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="Micro%20Transmissions/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">14</span>
+      <div>
+        <h3>Micro Transmissions</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="Montgomerys%20Ladder/">
-    <span class="challenge-item-title">Montgomerys Ladder</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="Montgomerys%20Ladder/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">15</span>
+      <div>
+        <h3>Montgomerys Ladder</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="Moving%20Problems/">
-    <span class="challenge-item-title">Moving Problems</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="Moving%20Problems/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">16</span>
+      <div>
+        <h3>Moving Problems</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="No%20Random%2C%20No%20Bias/">
-    <span class="challenge-item-title">No Random, No Bias</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="No%20Random%2C%20No%20Bias/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">17</span>
+      <div>
+        <h3>No Random, No Bias</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="Point%20Addition/">
-    <span class="challenge-item-title">Point Addition</span>
-    <span class="pill pill-done">已写 WP</span>
+  <a class="challenge-card" href="Point%20Addition/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">18</span>
+      <div>
+        <h3>Point Addition</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-done">已写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="Point%20Negation/">
-    <span class="challenge-item-title">Point Negation</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="Point%20Negation/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">19</span>
+      <div>
+        <h3>Point Negation</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="ProSign%203/">
-    <span class="challenge-item-title">ProSign 3</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="ProSign%203/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">20</span>
+      <div>
+        <h3>ProSign 3</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="Real%20Curve%20Crypto/">
-    <span class="challenge-item-title">Real Curve Crypto</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="Real%20Curve%20Crypto/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">21</span>
+      <div>
+        <h3>Real Curve Crypto</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="Scalar%20Multiplication/">
-    <span class="challenge-item-title">Scalar Multiplication</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="Scalar%20Multiplication/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">22</span>
+      <div>
+        <h3>Scalar Multiplication</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
-  <a class="challenge-item" href="Smooth%20Criminal/">
-    <span class="challenge-item-title">Smooth Criminal</span>
-    <span class="pill pill-todo">待写 WP</span>
+  <a class="challenge-card" href="Smooth%20Criminal/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">23</span>
+      <div>
+        <h3>Smooth Criminal</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      <span class="pill pill-todo">待写 WP</span>
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>
 </div>

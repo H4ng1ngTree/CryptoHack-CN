@@ -1,4 +1,4 @@
-﻿from pathlib import Path
+from pathlib import Path
 from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -73,26 +73,62 @@ title: 首页
 
 def write_category_pages(cats):
     for cat, challenges in cats:
+        total = len(challenges)
+        done = sum(1 for chal in challenges if (chal / 'WP.md').exists())
+        todo = total - done
+        percent = round(done * 100 / total) if total else 0
         items = []
-        for chal in challenges:
-            status = '<span class="pill pill-done">已写 WP</span>' if (chal / 'WP.md').exists() else '<span class="pill pill-todo">待写 WP</span>'
-            items.append(f'''  <a class="challenge-item" href="{quote(chal.name, safe='')}/">
-    <span class="challenge-item-title">{chal.name}</span>
-    {status}
+        for idx, chal in enumerate(challenges, 1):
+            has_wp = (chal / 'WP.md').exists()
+            status = '<span class="pill pill-done">已写 WP</span>' if has_wp else '<span class="pill pill-todo">待写 WP</span>'
+            items.append(f'''  <a class="challenge-card" href="{quote(chal.name, safe='')}/">
+    <div class="challenge-card-main">
+      <span class="challenge-number">{idx:02d}</span>
+      <div>
+        <h3>{chal.name}</h3>
+        <p>英语题面固定展示；中文精翻和个人解答在单题页内展开阅读。</p>
+      </div>
+    </div>
+    <div class="challenge-card-foot">
+      {status}
+      <span class="enter-link">进入题目 →</span>
+    </div>
   </a>''')
         page = f'''---
 layout: default
 title: {cat.name}
 ---
 
-<section class="collection-hero">
+<section class="collection-hero collection-hero-compact">
   <div class="breadcrumb"><a href="{{{{ '/' | relative_url }}}}">首页</a><span>/</span><span>{cat.name}</span></div>
   <p class="eyebrow">Challenge Set</p>
   <h1>{cat.name}</h1>
-  <p class="lead">本题目集共 {len(challenges)} 道题。进入单题页后，英语题面固定显示；中文题面和我的解答默认折叠，按需展开。</p>
+  <p class="lead">这一页只负责目录和跳转：先看题目列表，进入单题后再看固定英文题面、展开中文精翻或展开我的解答。</p>
 </section>
 
-<div class="challenge-list">
+<section class="collection-overview" aria-label="题目集概览">
+  <div class="overview-card overview-main">
+    <h2>阅读顺序</h2>
+    <ol>
+      <li>先从题目卡片进入单题页。</li>
+      <li>默认先读英文题面，保持原题语境。</li>
+      <li>需要时展开中文精翻，对照理解细节。</li>
+      <li>最后展开我的解答，按思路复盘。</li>
+    </ol>
+  </div>
+  <div class="overview-card progress-card">
+    <h2>整理进度</h2>
+    <div class="progress-number">{done}<span>/ {total}</span></div>
+    <div class="progress-track"><span style="width: {percent}%"></span></div>
+    <p>{done} 道已写 WP，{todo} 道待补题解。</p>
+  </div>
+</section>
+
+<div class="challenge-section-head">
+  <h2>题目列表</h2>
+  <span>{total} challenges</span>
+</div>
+<div class="challenge-grid">
 {chr(10).join(items)}
 </div>
 '''
@@ -147,4 +183,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
