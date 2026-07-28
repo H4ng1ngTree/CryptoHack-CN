@@ -1,5 +1,10 @@
-title: CryptoHack Notes
-description: CryptoHack 题目翻译与个人解答整理
+﻿title: CryptoHack Notes
+description: CryptoHack 题面精译与个人解答整理
 markdown: kramdown
-theme: minima
+theme: null
+baseurl: ""
+url: ""
 
+exclude:
+  - tools/
+  - README.md

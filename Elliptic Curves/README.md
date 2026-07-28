@@ -3,61 +3,104 @@ layout: default
 title: Elliptic Curves
 ---
 
-# Elliptic Curves
+<section class="collection-hero">
+  <div class="breadcrumb"><a href="{{ '/' | relative_url }}">首页</a><span>/</span><span>Elliptic Curves</span></div>
+  <p class="eyebrow">Challenge Set</p>
+  <h1>Elliptic Curves</h1>
+  <p class="lead">本题目集共 23 道题。进入单题页后，英语题面固定显示；中文题面和我的解答默认折叠，按需展开。</p>
+</section>
 
-来源：<https://cryptohack.org/challenges/ecc/>
-
-## 说明
-
-本目录按 CryptoHack 的 Elliptic Curves 题目集整理。每道题独立成目录，并包含：
-
-- `original.md`：英文题面结构化转写，保留标题、分数、关键公式、参数、连接方式与题目文件信息。
-- `translation.md`：对应的中文学术风格翻译。
-
-个人解答不在本阶段生成。
-
-## 题目索引
-
-### Background
-
-- [Background Reading](./Background%20Reading/) — 5 pts
-
-### Starter
-
-- [Point Negation](./Point%20Negation/) — 10 pts
-- [Point Addition](./Point%20Addition/) — 30 pts
-- [Scalar Multiplication](./Scalar%20Multiplication/) — 35 pts
-- [Curves and Logs](./Curves%20and%20Logs/) — 40 pts
-- [Efficient Exchange](./Efficient%20Exchange/) — 50 pts
-
-### Parameter Choice
-
-- [Smooth Criminal](./Smooth%20Criminal/) — 60 pts
-- [Exceptional Curves](./Exceptional%20Curves/) — 100 pts
-- [Micro Transmissions](./Micro%20Transmissions/) — 120 pts
-- [Elliptic Nodes](./Elliptic%20Nodes/) — 150 pts
-- [Moving Problems](./Moving%20Problems/) — 150 pts
-
-### Parameter Choice 2
-
-- [A Twisted Mind](./A%20Twisted%20Mind/) — 80 pts
-- [An Exceptional Twisted Mind](./An%20Exceptional%20Twisted%20Mind/) — 125 pts
-- [Checkpoint](./Checkpoint/) — 150 pts
-- [An Evil Twisted Mind](./An%20Evil%20Twisted%20Mind/) — 175 pts
-- [Real Curve Crypto](./Real%20Curve%20Crypto/) — 200 pts
-
-### Signatures
-
-- [Digestive](./Digestive/) — 60 pts
-- [Curveball](./Curveball/) — 100 pts
-- [ProSign 3](./ProSign%203/) — 100 pts
-- [No Random, No Bias](./No%20Random,%20No%20Bias/) — 120 pts
-
-### Edwards Curves
-
-- [Edwards Goes Degenerate](./Edwards%20Goes%20Degenerate/) — 100 pts
-
-### Side Channels
-
-- [Montgomery's Ladder](./Montgomerys%20Ladder/) — 40 pts
-- [Double and Broken](./Double%20and%20Broken/) — 50 pts
+<div class="challenge-list">
+  <a class="challenge-item" href="A%20Twisted%20Mind/">
+    <span class="challenge-item-title">A Twisted Mind</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="An%20Evil%20Twisted%20Mind/">
+    <span class="challenge-item-title">An Evil Twisted Mind</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="An%20Exceptional%20Twisted%20Mind/">
+    <span class="challenge-item-title">An Exceptional Twisted Mind</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="Background%20Reading/">
+    <span class="challenge-item-title">Background Reading</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="Checkpoint/">
+    <span class="challenge-item-title">Checkpoint</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="Curveball/">
+    <span class="challenge-item-title">Curveball</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="Curves%20and%20Logs/">
+    <span class="challenge-item-title">Curves and Logs</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="Digestive/">
+    <span class="challenge-item-title">Digestive</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="Double%20and%20Broken/">
+    <span class="challenge-item-title">Double and Broken</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="Edwards%20Goes%20Degenerate/">
+    <span class="challenge-item-title">Edwards Goes Degenerate</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="Efficient%20Exchange/">
+    <span class="challenge-item-title">Efficient Exchange</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="Elliptic%20Nodes/">
+    <span class="challenge-item-title">Elliptic Nodes</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="Exceptional%20Curves/">
+    <span class="challenge-item-title">Exceptional Curves</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="Micro%20Transmissions/">
+    <span class="challenge-item-title">Micro Transmissions</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="Montgomerys%20Ladder/">
+    <span class="challenge-item-title">Montgomerys Ladder</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="Moving%20Problems/">
+    <span class="challenge-item-title">Moving Problems</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="No%20Random%2C%20No%20Bias/">
+    <span class="challenge-item-title">No Random, No Bias</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="Point%20Addition/">
+    <span class="challenge-item-title">Point Addition</span>
+    <span class="pill pill-done">已写 WP</span>
+  </a>
+  <a class="challenge-item" href="Point%20Negation/">
+    <span class="challenge-item-title">Point Negation</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="ProSign%203/">
+    <span class="challenge-item-title">ProSign 3</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="Real%20Curve%20Crypto/">
+    <span class="challenge-item-title">Real Curve Crypto</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="Scalar%20Multiplication/">
+    <span class="challenge-item-title">Scalar Multiplication</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+  <a class="challenge-item" href="Smooth%20Criminal/">
+    <span class="challenge-item-title">Smooth Criminal</span>
+    <span class="pill pill-todo">待写 WP</span>
+  </a>
+</div>
