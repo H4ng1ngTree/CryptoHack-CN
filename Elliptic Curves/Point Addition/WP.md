@@ -76,7 +76,7 @@ S = point_add(S, R, A, P_MOD)
 assert is_on_curve(S, A, B, P_MOD)
 
 print(S)
-print(f"crypto{{{S[0]},{S[1]}}}")
+print("crypto{" + str(S[0]) + "," + str(S[1]) + "}")
 ```
 
 ## Result
@@ -85,4 +85,3 @@ print(f"crypto{{{S[0]},{S[1]}}}")
 (4215, 2162)
 crypto{4215,2162}
 ```
-
