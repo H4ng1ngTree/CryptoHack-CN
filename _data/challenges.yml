@@ -17,7 +17,7 @@
     - title: "Scalar Multiplication"
       url: "/Elliptic%20Curves/Scalar%20Multiplication/"
       group: "Starter"
-      has_wp: false
+      has_wp: true
     - title: "Curves and Logs"
       url: "/Elliptic%20Curves/Curves%20and%20Logs/"
       group: "Starter"
