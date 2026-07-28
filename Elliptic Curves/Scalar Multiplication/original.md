@@ -12,19 +12,21 @@ In the next few challenges, we will use scalar multiplication to create a shared
 
 Taken from "An Introduction to Mathematical Cryptography", *Jeffrey Hoffstein, Jill Pipher, Joseph H. Silverman*, the following algorithm will efficently calculate scalar multiplication of a point on an elliptic curve
 
-```text
-Double and Add algorithm for the scalar multiplication
+<div class="algorithm-block" markdown="1">
 
-Input: P \in E(\mathbb{F}_p) and an integer n > 0
-Output: Q = [n]P \in E(\mathbb{F}_p)
+**Double and Add algorithm for the scalar multiplication**
 
-1. Set Q = P and R = O.
-2. Loop while n > 0.
-3. If n \equiv 1 \mod 2, set R = R + Q.
-4. Set Q = [2] Q and n = \lfloor n/2 \rfloor.
-5. If n > 0, continue with loop at Step 2.
-6. Return the point R, which equals [n]P.
-```
+Input: $P \in E(\mathbb{F}_p)$ and an integer $n > 0$  
+Output: $Q = [n]P \in E(\mathbb{F}_p)$
+
+1. Set $Q = P$ and $R = O$.
+2. Loop while $n > 0$.
+3. If $n \equiv 1 \mod 2$, set $R = R + Q$.
+4. Set $Q = [2]Q$ and $n = \lfloor n/2 \rfloor$.
+5. If $n > 0$, continue with loop at Step 2.
+6. Return the point $R$, which equals $[n]P$.
+
+</div>
 
 > This is not the most efficient algorithm, there are many interesting ways to improve this calculation up, but this will be sufficient for our work.
 

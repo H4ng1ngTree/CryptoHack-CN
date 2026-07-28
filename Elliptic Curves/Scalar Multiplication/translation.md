@@ -12,19 +12,21 @@
 
 下面的算法摘自 Jeffrey Hoffstein、Jill Pipher 与 Joseph H. Silverman 合著的 *An Introduction to Mathematical Cryptography*，它可以高效计算椭圆曲线上一点的标量乘法。
 
-```text
-Double and Add 标量乘法算法
+<div class="algorithm-block" markdown="1">
 
-输入：P \in E(\mathbb{F}_p)，整数 n > 0
-输出：Q = [n]P \in E(\mathbb{F}_p)
+**Double and Add 标量乘法算法**
 
-1. 令 Q = P，R = O。
-2. 当 n > 0 时循环。
-3. 如果 n \equiv 1 \mod 2，则令 R = R + Q。
-4. 令 Q = [2]Q，并令 n = floor(n/2)。
-5. 如果 n > 0，回到第 2 步继续循环。
-6. 返回点 R，此时 R = [n]P。
-```
+输入：$P \in E(\mathbb{F}_p)$，整数 $n > 0$  
+输出：$Q = [n]P \in E(\mathbb{F}_p)$
+
+1. 令 $Q = P$，$R = O$。
+2. 当 $n > 0$ 时循环。
+3. 如果 $n \equiv 1 \mod 2$，则令 $R = R + Q$。
+4. 令 $Q = [2]Q$，并令 $n = \lfloor n/2 \rfloor$。
+5. 如果 $n > 0$，回到第 2 步继续循环。
+6. 返回点 $R$，此时 $R = [n]P$。
+
+</div>
 
 > 这并不是最高效的算法。还有许多有趣的方法可以改进这一计算，但它已经足以支撑我们接下来的工作。
 

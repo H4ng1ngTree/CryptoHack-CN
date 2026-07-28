@@ -26,5 +26,5 @@ has_wp: true
 {% capture WP_md_content %}{% include_relative WP.md %}{% endcapture %}
 {{ WP_md_content | markdownify }}
 
-<p><a class="pill" href="./WP.py">查看 WP 源码</a></p>
+<p class="download-row"><a class="download-link" href="./WP.py" download>下载解题代码（WP.py）</a></p>
 </details>

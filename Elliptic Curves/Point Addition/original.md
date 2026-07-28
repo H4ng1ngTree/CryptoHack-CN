@@ -12,20 +12,22 @@ It turns out that there is an efficient algorithm for calculating the point addi
 
 Taken from "An Introduction to Mathematical Cryptography", *Jeffrey Hoffstein, Jill Pipher, Joseph H. Silverman*, the following algorithm will calculate the addition of two points on an elliptic curve
 
-```text
-Algorithm for the addition of two points: P + Q
+<div class="algorithm-block" markdown="1">
 
-(a) If P = O, then P + Q = Q.
-(b) Otherwise, if Q = O, then P + Q = P.
-(c) Otherwise, write P = (x_{1}, y_{1}) and Q = (x_{2}, y_{2}).
-(d) If x_{1} = x_{2} and y_{1} = -y_{2}, then P + Q = O.
-(e) Otherwise:
-(e1) if P \neq Q: \lambda = (y_{2} - y_{1}) / (x_{2} - x_{1})
-(e2) if P = Q: \lambda = (3x_{1}^2 + a) / 2y_{1}
-(f) x_{3} = lambda^2 - x_{1} - x_{2}
-(h) y_{3} = lambda(x_{1} -x_{3}) - y_{1}
-(i) P + Q = (x_{3}, y_{3})
-```
+**Algorithm for the addition of two points: $P + Q$**
+
+(a) If $P = O$, then $P + Q = Q$.  
+(b) Otherwise, if $Q = O$, then $P + Q = P$.  
+(c) Otherwise, write $P = (x_{1}, y_{1})$ and $Q = (x_{2}, y_{2})$.  
+(d) If $x_{1} = x_{2}$ and $y_{1} = -y_{2}$, then $P + Q = O$.  
+(e) Otherwise:  
+(e1) if $P \neq Q$: $\lambda = (y_{2} - y_{1}) / (x_{2} - x_{1})$  
+(e2) if $P = Q$: $\lambda = (3x_{1}^2 + a) / 2y_{1}$  
+(f) $x_{3} = \lambda^2 - x_{1} - x_{2}$  
+(h) $y_{3} = \lambda(x_{1} - x_{3}) - y_{1}$  
+(i) $P + Q = (x_{3}, y_{3})$
+
+</div>
 
 > We are working with a finite field, so the above calculations should be done modulo $p$, and we do not "divide" by an integer, we instead multiply by the modular inverse of a number. e.g. $5^{-1} \equiv 9 \mod 11$.
 

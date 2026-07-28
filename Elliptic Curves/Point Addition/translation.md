@@ -12,19 +12,22 @@
 
 下面的算法摘自 Jeffrey Hoffstein、Jill Pipher 与 Joseph H. Silverman 合著的 *An Introduction to Mathematical Cryptography*，它可以计算椭圆曲线上两个点的和。
 
-```text
-两点相加算法：P + Q
-(a) 如果 P = O，那么 P + Q = Q。
-(b) 否则，如果 Q = O，那么 P + Q = P。
-(c) 否则，记 P = (x_{1}, y_{1})，Q = (x_{2}, y_{2})。
-(d) 如果 x_{1} = x_{2} 且 y_{1} = -y_{2}，那么 P + Q = O。
-(e) 否则：
-(e1) 若 P \neq Q：\lambda = (y_{2} - y_{1}) / (x_{2} - x_{1})
-(e2) 若 P = Q：\lambda = (3x_{1}^2 + a) / 2y_{1}
-(f) x_{3} = lambda^2 - x_{1} - x_{2}
-(h) y_{3} = lambda(x_{1} -x_{3}) - y_{1}
-(i) P + Q = (x_{3}, y_{3})
-```
+<div class="algorithm-block" markdown="1">
+
+**两点相加算法：$P + Q$**
+
+(a) 如果 $P = O$，那么 $P + Q = Q$。  
+(b) 否则，如果 $Q = O$，那么 $P + Q = P$。  
+(c) 否则，记 $P = (x_{1}, y_{1})$，$Q = (x_{2}, y_{2})$。  
+(d) 如果 $x_{1} = x_{2}$ 且 $y_{1} = -y_{2}$，那么 $P + Q = O$。  
+(e) 否则：  
+(e1) 若 $P \neq Q$：$\lambda = (y_{2} - y_{1}) / (x_{2} - x_{1})$  
+(e2) 若 $P = Q$：$\lambda = (3x_{1}^2 + a) / 2y_{1}$  
+(f) $x_{3} = \lambda^2 - x_{1} - x_{2}$  
+(h) $y_{3} = \lambda(x_{1} - x_{3}) - y_{1}$  
+(i) $P + Q = (x_{3}, y_{3})$
+
+</div>
 
 > 我们工作在有限域中，因此上述计算都应在模 $p$ 的意义下进行。这里并不是直接“除以”一个整数，而是乘以该数的模逆元。例如：$5^{-1} \equiv 9 \mod 11$。
 

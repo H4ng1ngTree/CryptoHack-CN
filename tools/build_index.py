@@ -206,7 +206,7 @@ def write_challenge_pages(cats):
             wp_block = markdownified_include('WP.md') if has_wp else '<p class="muted-note">这里先留空。等我写完题解后，再让 Codex 按我的语气和语义润色。</p>'
             py_link = ''
             if (chal / 'WP.py').exists():
-                py_link = '\n\n<p><a class="pill" href="./WP.py">查看 WP 源码</a></p>'
+                py_link = '\n\n<p class="download-row"><a class="download-link" href="./WP.py" download>下载解题代码（WP.py）</a></p>'
             page = f'''---
 layout: challenge
 title: {chal.name}

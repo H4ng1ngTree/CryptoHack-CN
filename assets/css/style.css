@@ -242,3 +242,39 @@ mjx-container {
 .muted-note {
   color: var(--muted);
 }
+.download-row {
+  margin-top: 1rem;
+}
+.download-link {
+  display: inline-flex;
+  align-items: center;
+  padding: .45rem .75rem;
+  border: 1px solid var(--line);
+  border-radius: .55rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: .92rem;
+  font-weight: 650;
+}
+.download-link:hover {
+  text-decoration: none;
+  border-color: #b7c7ef;
+  background: #e8efff;
+}
+.algorithm-block {
+  margin: 1rem 0;
+  padding: .9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: .55rem;
+  background: var(--code-bg);
+}
+.algorithm-block p:first-child {
+  margin-top: 0;
+}
+.algorithm-block p:last-child,
+.algorithm-block ol:last-child {
+  margin-bottom: 0;
+}
+.algorithm-block ol {
+  padding-left: 1.25rem;
+}

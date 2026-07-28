@@ -14,20 +14,22 @@
 
 椭圆曲线上点标量乘法的常数时间算法中，一个关键组成部分基于 Montgomery 阶梯。本题的目标是在群 $E(\mathbb{F}_p)$ 中实现其最基础版本：Montgomery 二进制算法。
 
-```text
-群 E(F_p) 中的 Montgomery 二进制算法
+<div class="algorithm-block" markdown="1">
 
-输入：P \in E(F_p)，以及 n 位整数 k = sum 2^i k_i，其中 k_{n-1} = 1
-输出：[k]P \in E(F_p)
+**群 $E(\mathbb{F}_p)$ 中的 Montgomery 二进制算法**
 
-1. 将 (R_0, R_1) 设为 (P, [2]P)
-2. 对 i 从 n - 2 递减到 0：
-3.   如果 k_i = 0：
-4.       将 (R_0, R_1) 设为 ([2]R_0, R_0 + R_1)
-5.   否则：
-6.       将 (R_0, R_1) 设为 (R_0 + R_1, [2]R_1)
-7. 返回 R_0
-```
+输入：$P \in E(\mathbb{F}_p)$，以及 $n$ 位整数 $k = \sum 2^i k_i$，其中 $k_{n-1} = 1$  
+输出：$[k]P \in E(\mathbb{F}_p)$
+
+1. 将 $(R_0, R_1)$ 设为 $(P, [2]P)$。
+2. 对 $i$ 从 $n - 2$ 递减到 $0$。
+3. 如果 $k_i = 0$。
+4. 将 $(R_0, R_1)$ 设为 $([2]R_0, R_0 + R_1)$。
+5. 否则：
+6. 将 $(R_0, R_1)$ 设为 $(R_0 + R_1, [2]R_1)$。
+7. 返回 $R_0$。
+
+</div>
 
 > 从高层看，请注意：无论 $k$ 的当前比特是什么，每一步都会同时执行一次倍点和一次加法操作。可以将其与 starter 挑战中的 double-and-add 算法作比较。当然这里仍然存在一些明显问题：执行步数会泄漏 $k$ 的比特长度，而且算法中仍有 `if` 分支，分支行为可能泄漏 $k$ 的比特结构。感兴趣的学习者可以参考 [Montgomery curves and their arithmetic](https://eprint.iacr.org/2017/212.pdf) 中的算法 8，对实现进行改进。
 
@@ -41,31 +43,35 @@ $$
 
 这条曲线是 Montgomery 形式，而不是本系列许多题中使用的 Weierstrass 形式。虽然可以把这条曲线映射到 Weierstrass 形式，并复用旧的倍点与加法公式，但我们建议直接使用 Montgomery 曲线的公式：$E : By^{2} = x^{3} + Ax^{2} + x$。为此，题面给出了该曲线在仿射坐标中的加法和倍点公式。若想了解一组优美且快速的射影坐标公式，请参考 [Montgomery curves and the Montgomery ladder](https://eprint.iacr.org/2017/293.pdf)。
 
-```text
-Montgomery 曲线加法公式（仿射坐标）
+<div class="algorithm-block" markdown="1">
 
-输入：P, Q \in E(F_p)，且 P \neq Q
-输出：R = (P + Q) \in E(F_p)
+**Montgomery 曲线加法公式（仿射坐标）**
 
-(x_1, y_1), (x_2, y_2) = P, Q
-alpha = (y_{2} - y_{1}) / (x_{2} - x_{1})
-x_{3} = B alpha^{2} - A - x_{1} - x_{2}
-y_{3} = alpha (x_{1} - x_{3}) - y_{1}
-R = (x_{3}, y_{3})
-```
+输入：$P, Q \in E(\mathbb{F}_p)$，且 $P \neq Q$  
+输出：$R = (P + Q) \in E(\mathbb{F}_p)$
 
-```text
-Montgomery 曲线倍点公式（仿射坐标）
+$(x_1, y_1), (x_2, y_2) = P, Q$  
+$\alpha = (y_{2} - y_{1}) / (x_{2} - x_{1})$  
+$x_{3} = B \alpha^{2} - A - x_{1} - x_{2}$  
+$y_{3} = \alpha (x_{1} - x_{3}) - y_{1}$  
+$R = (x_{3}, y_{3})$
 
-输入：P \in E(F_p)
-输出：R = [2]P \in E(F_p)
+</div>
 
-(x_1, y_1) = P
-alpha = (3x^{2}_{1} + 2Ax_{1} + 1) / (2By_{1})
-x_{3} = B alpha^{2} - A - 2x_{1}
-y_{3} = alpha(x_{1} - x_{3}) - y_{1}
-R = (x_{3}, y_{3})
-```
+<div class="algorithm-block" markdown="1">
+
+**Montgomery 曲线倍点公式（仿射坐标）**
+
+输入：$P \in E(\mathbb{F}_p)$  
+输出：$R = [2]P \in E(\mathbb{F}_p)$
+
+$(x_1, y_1) = P$  
+$\alpha = (3x^{2}_{1} + 2Ax_{1} + 1) / (2By_{1})$  
+$x_{3} = B\alpha^{2} - A - 2x_{1}$  
+$y_{3} = \alpha(x_{1} - x_{3}) - y_{1}$  
+$R = (x_{3}, y_{3})$
+
+</div>
 
 注意：所有运算都在模 $p$ 的意义下进行。
 
