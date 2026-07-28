@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
@@ -9,22 +9,20 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="{{ '/' | relative_url }}">
-      <span class="brand-mark">CH</span>
-      <span class="brand-text">CryptoHack Notes</span>
-    </a>
-    <nav class="top-nav" aria-label="题目集导航">
-      {% for item in site.data.navigation %}
-        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-      {% endfor %}
-    </nav>
+    <div class="site-header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">CryptoHack Notes</a>
+      <nav class="top-nav" aria-label="题目集导航">
+        {% for item in site.data.navigation %}
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% endfor %}
+      </nav>
+    </div>
   </header>
 
   <main class="page-shell">
     {{ content }}
   </main>
 
-  <button class="back-to-top" type="button" aria-label="回到顶部">↑</button>
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>

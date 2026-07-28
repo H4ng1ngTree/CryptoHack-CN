@@ -1,22 +1,22 @@
-﻿---
+---
 layout: default
 ---
 <article class="challenge-page">
-  <div class="breadcrumb">
+  <nav class="breadcrumb" aria-label="面包屑导航">
     <a href="{{ '/' | relative_url }}">首页</a>
     <span>/</span>
     <a href="{{ page.category_url | relative_url }}">{{ page.category_title }}</a>
     <span>/</span>
     <span>{{ page.title }}</span>
-  </div>
+  </nav>
 
   <header class="challenge-hero">
     <p class="eyebrow">{{ page.category_title }}</p>
     <h1>{{ page.title }}</h1>
     <div class="meta-row">
-      <span class="pill">English 固定题面</span>
-      <span class="pill">中文精翻可展开</span>
-      <span class="pill">个人解答可展开</span>
+      <span class="pill">英语题面固定展示</span>
+      <span class="pill">中文题面可展开</span>
+      <span class="pill">我的解答可展开</span>
       {% if page.has_wp %}<span class="pill pill-done">已写 WP</span>{% else %}<span class="pill pill-todo">待写 WP</span>{% endif %}
     </div>
   </header>

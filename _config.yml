@@ -1,9 +1,9 @@
-﻿title: CryptoHack Notes
+title: CryptoHack Notes
 description: CryptoHack 题面精译与个人解答整理
 markdown: kramdown
 theme: null
-baseurl: ""
-url: ""
+baseurl: "/CryptoHack-CN"
+url: "https://h4ng1ngtree.github.io"
 
 exclude:
   - tools/
