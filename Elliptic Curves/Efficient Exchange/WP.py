@@ -59,14 +59,24 @@ y = pow(rhs, (P_MOD + 1) // 4, P_MOD)
 y_other = (-y) % P_MOD
 
 QA = (xA, y)
+QA_other = (xA, y_other)
 S = scalar_multiplication(QA, nB, A, P_MOD)
+S_other = scalar_multiplication(QA_other, nB, A, P_MOD)
 shared_x = S[0]
+
+assert (y * y) % P_MOD == rhs
+assert (y_other * y_other) % P_MOD == rhs
+assert y in (6287, 3452) and y_other in (6287, 3452)
+assert S[0] == S_other[0] == 1791
 
 key = sha1(str(shared_x).encode()).digest()[:16]
 cipher = AES.new(key, AES.MODE_CBC, bytes.fromhex(iv))
 flag = unpad(cipher.decrypt(bytes.fromhex(encrypted_flag)), 16).decode()
 
+assert flag == "crypto{3ff1c1ent_k3y_3xch4ng3}"
+
 print(f"y candidates: {y}, {y_other}")
 print("shared secret:", S)
+print("shared secret with other y:", S_other)
 print("shared x:", shared_x)
 print(flag)

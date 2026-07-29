@@ -63,8 +63,15 @@ shared_secret = scalar_multiplication(QA, nB, A, MOD)
 assert is_on_curve(shared_secret, A, B, MOD)
 
 shared_x = shared_secret[0]
-flag = sha1(str(shared_x).encode()).hexdigest()
+digest = sha1(str(shared_x).encode()).hexdigest()
+flag = f"crypto{{{digest}}}"
+
+assert shared_secret == (7929, 707)
+assert shared_x == 7929
+assert digest == "80e5212754a824d3a4aed185ace4f9cac0f908bf"
+assert flag == "crypto{80e5212754a824d3a4aed185ace4f9cac0f908bf}"
 
 print("shared secret:", shared_secret)
 print("shared x:", shared_x)
+print("digest:", digest)
 print(flag)

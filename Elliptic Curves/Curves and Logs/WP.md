@@ -22,9 +22,9 @@ n_B = 1829
 
 按照 ECDH 的流程，Bob 这边要算的是：
 
-\[
+$$
 S = [n_B]Q_A
-\]
+$$
 
 也就是把 Alice 的公钥点 Q_A 乘上自己的私钥 n_B。这里不用去反推 Alice 的 n_A，因为 ECDLP 本来就是难反推的；我们只需要正常做标量乘法。
 
@@ -44,7 +44,8 @@ nB = 1829
 
 S = scalar_multiplication(QA, nB, A, MOD)
 shared_x = S[0]
-flag = sha1(str(shared_x).encode()).hexdigest()
+digest = sha1(str(shared_x).encode()).hexdigest()
+flag = f"crypto{{{digest}}}"
 ```
 
 完整代码见本页下方的 `WP.py` 下载链接。
@@ -54,11 +55,12 @@ flag = sha1(str(shared_x).encode()).hexdigest()
 ```text
 shared secret: (7929, 707)
 shared x: 7929
-80e5212754a824d3a4aed185ace4f9cac0f908bf
+digest: 80e5212754a824d3a4aed185ace4f9cac0f908bf
+crypto{80e5212754a824d3a4aed185ace4f9cac0f908bf}
 ```
 
 ## Flag
 
 ```text
-80e5212754a824d3a4aed185ace4f9cac0f908bf
+crypto{80e5212754a824d3a4aed185ace4f9cac0f908bf}
 ```
