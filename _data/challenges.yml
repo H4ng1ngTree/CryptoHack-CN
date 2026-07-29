@@ -21,11 +21,11 @@
     - title: "Curves and Logs"
       url: "/Elliptic%20Curves/Curves%20and%20Logs/"
       group: "Starter"
-      has_wp: false
+      has_wp: true
     - title: "Efficient Exchange"
       url: "/Elliptic%20Curves/Efficient%20Exchange/"
       group: "Starter"
-      has_wp: false
+      has_wp: true
     - title: "Smooth Criminal"
       url: "/Elliptic%20Curves/Smooth%20Criminal/"
       group: "Parameter Choice"

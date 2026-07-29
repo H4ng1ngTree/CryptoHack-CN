@@ -22,9 +22,9 @@ title: Elliptic Curves
   </div>
   <div class="overview-card progress-card">
     <h2>整理进度</h2>
-    <div class="progress-number">4<span>/ 23</span></div>
-    <div class="progress-track"><span style="width: 17%"></span></div>
-    <p>4 道已写 WP，19 道待补题解。</p>
+    <div class="progress-number">6<span>/ 23</span></div>
+    <div class="progress-track"><span style="width: 26%"></span></div>
+    <p>6 道已写 WP，17 道待补题解。</p>
   </div>
 </section>
 
@@ -108,7 +108,7 @@ title: Elliptic Curves
         </div>
       </div>
       <div class="challenge-card-foot">
-        <span class="pill pill-todo">待写 WP</span>
+        <span class="pill pill-done">已写 WP</span>
         <span class="enter-link">进入题目 →</span>
       </div>
     </a>
@@ -121,7 +121,7 @@ title: Elliptic Curves
         </div>
       </div>
       <div class="challenge-card-foot">
-        <span class="pill pill-todo">待写 WP</span>
+        <span class="pill pill-done">已写 WP</span>
         <span class="enter-link">进入题目 →</span>
       </div>
     </a>
