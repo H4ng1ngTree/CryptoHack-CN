@@ -129,6 +129,65 @@ pre code { padding: 0; background: transparent; }
   color: inherit;
   background: transparent;
 }
+.attachment-card .highlight {
+  background: transparent;
+}
+.attachment-card .highlight .c,
+.attachment-card .highlight .c1,
+.attachment-card .highlight .cm {
+  color: #8f9a8f;
+  font-style: italic;
+}
+.attachment-card .highlight .k,
+.attachment-card .highlight .kc,
+.attachment-card .highlight .kd,
+.attachment-card .highlight .kn,
+.attachment-card .highlight .kp,
+.attachment-card .highlight .kr,
+.attachment-card .highlight .ow {
+  color: #ff7ab2;
+  font-weight: 650;
+}
+.attachment-card .highlight .s,
+.attachment-card .highlight .s1,
+.attachment-card .highlight .s2,
+.attachment-card .highlight .sb,
+.attachment-card .highlight .sc,
+.attachment-card .highlight .sd,
+.attachment-card .highlight .se,
+.attachment-card .highlight .sh,
+.attachment-card .highlight .si,
+.attachment-card .highlight .sx {
+  color: #f6d365;
+}
+.attachment-card .highlight .m,
+.attachment-card .highlight .mi,
+.attachment-card .highlight .mf,
+.attachment-card .highlight .mh,
+.attachment-card .highlight .mo {
+  color: #9cdcfe;
+}
+.attachment-card .highlight .nb,
+.attachment-card .highlight .bp,
+.attachment-card .highlight .fm {
+  color: #7ee787;
+}
+.attachment-card .highlight .nf,
+.attachment-card .highlight .na {
+  color: #82aaff;
+}
+.attachment-card .highlight .nc,
+.attachment-card .highlight .nn {
+  color: #c792ea;
+}
+.attachment-card .highlight .o,
+.attachment-card .highlight .p {
+  color: #d7dce2;
+}
+.attachment-card .highlight .err {
+  color: #ff6b6b;
+  background: transparent;
+}
 .attachment-card a {
   color: #8a4b00;
 }
