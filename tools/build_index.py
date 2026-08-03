@@ -77,8 +77,9 @@ def write_data(cats):
         ch_yaml.append(f'- title: {yq(cat.name)}\n  url: {yq(enc_path([cat.name]))}\n  count: {len(challenges)}\n  challenges:\n')
         for chal in challenges:
             has_wp = (chal / 'WP.md').exists()
+            has_attachments = (chal / 'attachments.md').exists()
             group = challenge_group(cat.name, chal.name)
-            ch_yaml.append(f'    - title: {yq(chal.name)}\n      url: {yq(enc_path([cat.name, chal.name]))}\n      group: {yq(group)}\n      has_wp: {str(has_wp).lower()}\n')
+            ch_yaml.append(f'    - title: {yq(chal.name)}\n      url: {yq(enc_path([cat.name, chal.name]))}\n      group: {yq(group)}\n      has_wp: {str(has_wp).lower()}\n      has_attachments: {str(has_attachments).lower()}\n')
     (data / 'navigation.yml').write_text(''.join(nav), encoding='utf-8')
     (data / 'challenges.yml').write_text(''.join(ch_yaml), encoding='utf-8')
 
@@ -203,7 +204,17 @@ def write_challenge_pages(cats):
     for cat, challenges in cats:
         for chal in challenges:
             has_wp = (chal / 'WP.md').exists()
+            has_attachments = (chal / 'attachments.md').exists()
             wp_block = markdownified_include('WP.md') if has_wp else '<p class="muted-note">这里先留空。等我写完题解后，再让 Codex 按我的语气和语义润色。</p>'
+            attachments_block = ''
+            if has_attachments:
+                attachments_block = f'''
+<details class="fold-card attachment-card markdown-body">
+  <summary><h2>题目附件 / Challenge Files</h2></summary>
+
+{markdownified_include('attachments.md')}
+</details>
+'''
             py_link = ''
             if (chal / 'WP.py').exists():
                 py_link = '\n\n<p class="download-row"><a class="download-link" href="./WP.py" download>下载解题代码（WP.py）</a></p>'
@@ -227,7 +238,7 @@ has_wp: {str(has_wp).lower()}
 {markdownified_include('translation.md')}
 </details>
 
-<details class="fold-card markdown-body">
+{attachments_block}<details class="fold-card markdown-body">
   <summary><h2>我的解答</h2></summary>
 
 {wp_block}{py_link}

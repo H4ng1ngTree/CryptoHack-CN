@@ -6,91 +6,114 @@
       url: "/Elliptic%20Curves/Background%20Reading/"
       group: "Background"
       has_wp: true
+      has_attachments: false
     - title: "Point Negation"
       url: "/Elliptic%20Curves/Point%20Negation/"
       group: "Starter"
       has_wp: true
+      has_attachments: false
     - title: "Point Addition"
       url: "/Elliptic%20Curves/Point%20Addition/"
       group: "Starter"
       has_wp: true
+      has_attachments: false
     - title: "Scalar Multiplication"
       url: "/Elliptic%20Curves/Scalar%20Multiplication/"
       group: "Starter"
       has_wp: true
+      has_attachments: false
     - title: "Curves and Logs"
       url: "/Elliptic%20Curves/Curves%20and%20Logs/"
       group: "Starter"
       has_wp: true
+      has_attachments: false
     - title: "Efficient Exchange"
       url: "/Elliptic%20Curves/Efficient%20Exchange/"
       group: "Starter"
       has_wp: true
+      has_attachments: true
     - title: "Smooth Criminal"
       url: "/Elliptic%20Curves/Smooth%20Criminal/"
       group: "Parameter Choice"
       has_wp: false
+      has_attachments: true
     - title: "Exceptional Curves"
       url: "/Elliptic%20Curves/Exceptional%20Curves/"
       group: "Parameter Choice"
       has_wp: false
+      has_attachments: true
     - title: "Micro Transmissions"
       url: "/Elliptic%20Curves/Micro%20Transmissions/"
       group: "Parameter Choice"
       has_wp: false
+      has_attachments: true
     - title: "Elliptic Nodes"
       url: "/Elliptic%20Curves/Elliptic%20Nodes/"
       group: "Parameter Choice"
       has_wp: false
+      has_attachments: true
     - title: "Moving Problems"
       url: "/Elliptic%20Curves/Moving%20Problems/"
       group: "Parameter Choice"
       has_wp: false
+      has_attachments: true
     - title: "A Twisted Mind"
       url: "/Elliptic%20Curves/A%20Twisted%20Mind/"
       group: "Parameter Choice 2"
       has_wp: false
+      has_attachments: true
     - title: "An Exceptional Twisted Mind"
       url: "/Elliptic%20Curves/An%20Exceptional%20Twisted%20Mind/"
       group: "Parameter Choice 2"
       has_wp: false
+      has_attachments: true
     - title: "Checkpoint"
       url: "/Elliptic%20Curves/Checkpoint/"
       group: "Parameter Choice 2"
       has_wp: false
+      has_attachments: true
     - title: "An Evil Twisted Mind"
       url: "/Elliptic%20Curves/An%20Evil%20Twisted%20Mind/"
       group: "Parameter Choice 2"
       has_wp: false
+      has_attachments: true
     - title: "Real Curve Crypto"
       url: "/Elliptic%20Curves/Real%20Curve%20Crypto/"
       group: "Parameter Choice 2"
       has_wp: false
+      has_attachments: true
     - title: "Digestive"
       url: "/Elliptic%20Curves/Digestive/"
       group: "Signatures"
       has_wp: false
+      has_attachments: false
     - title: "Curveball"
       url: "/Elliptic%20Curves/Curveball/"
       group: "Signatures"
       has_wp: false
+      has_attachments: true
     - title: "ProSign 3"
       url: "/Elliptic%20Curves/ProSign%203/"
       group: "Signatures"
       has_wp: false
+      has_attachments: true
     - title: "No Random, No Bias"
       url: "/Elliptic%20Curves/No%20Random%2C%20No%20Bias/"
       group: "Signatures"
       has_wp: false
+      has_attachments: true
     - title: "Edwards Goes Degenerate"
       url: "/Elliptic%20Curves/Edwards%20Goes%20Degenerate/"
       group: "Edwards Curves"
       has_wp: false
+      has_attachments: true
     - title: "Montgomerys Ladder"
       url: "/Elliptic%20Curves/Montgomerys%20Ladder/"
       group: "Side Channels"
       has_wp: false
+      has_attachments: false
     - title: "Double and Broken"
       url: "/Elliptic%20Curves/Double%20and%20Broken/"
       group: "Side Channels"
       has_wp: false
+      has_attachments: true

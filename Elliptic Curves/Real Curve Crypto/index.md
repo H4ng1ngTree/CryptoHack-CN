@@ -20,6 +20,13 @@ has_wp: false
 {{ translation_md_content | markdownify }}
 </details>
 
+
+<details class="fold-card attachment-card markdown-body">
+  <summary><h2>题目附件 / Challenge Files</h2></summary>
+
+{% capture attachments_md_content %}{% include_relative attachments.md %}{% endcapture %}
+{{ attachments_md_content | markdownify }}
+</details>
 <details class="fold-card markdown-body">
   <summary><h2>我的解答</h2></summary>
 

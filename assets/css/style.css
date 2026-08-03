@@ -110,6 +110,28 @@ pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberat
 code { padding: .1rem .28rem; border-radius: .3rem; background: var(--code-bg); }
 pre { overflow-x: auto; padding: .9rem 1rem; border-radius: .55rem; background: var(--code-bg); }
 pre code { padding: 0; background: transparent; }
+.attachment-card {
+  border-color: #d7b36a;
+  background: #fffaf0;
+}
+.attachment-card summary::after {
+  color: #9a5d00;
+}
+.attachment-card pre {
+  border: 1px solid #5b4630;
+  background: #17130f;
+  color: #f7ead0;
+}
+.attachment-card code {
+  background: #f3e5c8;
+}
+.attachment-card pre code {
+  color: inherit;
+  background: transparent;
+}
+.attachment-card a {
+  color: #8a4b00;
+}
 .challenge-footer { display: flex; justify-content: space-between; gap: 1rem; margin-top: 1.4rem; padding-top: 1rem; border-top: 1px solid var(--line); }
 @media (max-width: 720px) {
   .site-header-inner { align-items: flex-start; flex-direction: column; padding: .8rem 0; }
