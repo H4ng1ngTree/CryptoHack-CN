@@ -132,10 +132,16 @@ pre code { padding: 0; background: transparent; }
 .attachment-card .highlight {
   background: transparent;
 }
+.attachment-card .highlight span {
+  color: inherit;
+}
 .attachment-card .highlight .c,
 .attachment-card .highlight .c1,
-.attachment-card .highlight .cm {
-  color: #8f9a8f;
+.attachment-card .highlight .cm,
+.attachment-card .c,
+.attachment-card .c1,
+.attachment-card .cm {
+  color: #7f8f7f !important;
   font-style: italic;
 }
 .attachment-card .highlight .k,
@@ -144,8 +150,15 @@ pre code { padding: 0; background: transparent; }
 .attachment-card .highlight .kn,
 .attachment-card .highlight .kp,
 .attachment-card .highlight .kr,
-.attachment-card .highlight .ow {
-  color: #ff7ab2;
+.attachment-card .highlight .ow,
+.attachment-card .k,
+.attachment-card .kc,
+.attachment-card .kd,
+.attachment-card .kn,
+.attachment-card .kp,
+.attachment-card .kr,
+.attachment-card .ow {
+  color: #ff5fa2 !important;
   font-weight: 650;
 }
 .attachment-card .highlight .s,
@@ -157,35 +170,60 @@ pre code { padding: 0; background: transparent; }
 .attachment-card .highlight .se,
 .attachment-card .highlight .sh,
 .attachment-card .highlight .si,
-.attachment-card .highlight .sx {
-  color: #f6d365;
+.attachment-card .highlight .sx,
+.attachment-card .s,
+.attachment-card .s1,
+.attachment-card .s2,
+.attachment-card .sb,
+.attachment-card .sc,
+.attachment-card .sd,
+.attachment-card .se,
+.attachment-card .sh,
+.attachment-card .si,
+.attachment-card .sx,
+.attachment-card .sa {
+  color: #ffd166 !important;
 }
 .attachment-card .highlight .m,
 .attachment-card .highlight .mi,
 .attachment-card .highlight .mf,
 .attachment-card .highlight .mh,
-.attachment-card .highlight .mo {
-  color: #9cdcfe;
+.attachment-card .highlight .mo,
+.attachment-card .m,
+.attachment-card .mi,
+.attachment-card .mf,
+.attachment-card .mh,
+.attachment-card .mo {
+  color: #7dd3fc !important;
 }
 .attachment-card .highlight .nb,
 .attachment-card .highlight .bp,
-.attachment-card .highlight .fm {
-  color: #7ee787;
+.attachment-card .highlight .fm,
+.attachment-card .nb,
+.attachment-card .bp,
+.attachment-card .fm {
+  color: #7ee787 !important;
 }
 .attachment-card .highlight .nf,
-.attachment-card .highlight .na {
-  color: #82aaff;
+.attachment-card .highlight .na,
+.attachment-card .nf,
+.attachment-card .na {
+  color: #8ab4ff !important;
 }
 .attachment-card .highlight .nc,
-.attachment-card .highlight .nn {
-  color: #c792ea;
+.attachment-card .highlight .nn,
+.attachment-card .nc,
+.attachment-card .nn {
+  color: #c792ea !important;
 }
 .attachment-card .highlight .o,
-.attachment-card .highlight .p {
-  color: #d7dce2;
+.attachment-card .highlight .p,
+.attachment-card .o,
+.attachment-card .p {
+  color: #f0f4f8 !important;
 }
 .attachment-card .highlight .err {
-  color: #ff6b6b;
+  color: #ff6b6b !important;
   background: transparent;
 }
 .attachment-card a {
