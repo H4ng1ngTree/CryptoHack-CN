@@ -119,8 +119,8 @@ pre code { padding: 0; background: transparent; }
 }
 .attachment-card pre {
   border: 1px solid #5b4630;
-  background: #17130f;
-  color: #f7ead0;
+  background: #0f0d0a !important;
+  color: #f7ead0 !important;
 }
 .attachment-card code {
   background: #f3e5c8;
@@ -130,7 +130,16 @@ pre code { padding: 0; background: transparent; }
   background: transparent;
 }
 .attachment-card .highlight {
-  background: transparent;
+  background: #0f0d0a !important;
+  border-radius: .55rem;
+}
+.attachment-card .highlight pre,
+.attachment-card div.highlight,
+.attachment-card div.highlight pre,
+.attachment-card .language-python.highlighter-rouge,
+.attachment-card .language-text.highlighter-rouge {
+  background: #0f0d0a !important;
+  color: #f7ead0 !important;
 }
 .attachment-card .highlight span {
   color: inherit;
