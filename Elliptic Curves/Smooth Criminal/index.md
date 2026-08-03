@@ -3,7 +3,7 @@ layout: challenge
 title: Smooth Criminal
 category_title: Elliptic Curves
 category_url: /Elliptic%20Curves/
-has_wp: false
+has_wp: true
 ---
 
 <section class="content-card markdown-body">
@@ -30,7 +30,6 @@ has_wp: false
 <details class="fold-card markdown-body">
   <summary><h2>我的解答</h2></summary>
 
-<p class="muted-note">这里先留空。等我写完题解后，再让 Codex 按我的语气和语义润色。</p>
-
-<p class="download-row"><a class="download-link" href="./WP.py" download>下载解题代码（WP.py）</a></p>
+{% capture WP_md_content %}{% include_relative WP.md %}{% endcapture %}
+{{ WP_md_content | markdownify }}
 </details>

@@ -35,7 +35,7 @@
     - title: "Smooth Criminal"
       url: "/Elliptic%20Curves/Smooth%20Criminal/"
       group: "Parameter Choice"
-      has_wp: false
+      has_wp: true
       has_attachments: true
     - title: "Exceptional Curves"
       url: "/Elliptic%20Curves/Exceptional%20Curves/"
