@@ -7,9 +7,9 @@
 
 题目要算的是：
 
-```text
+$$
 Q = [7863]P
-```
+$$
 
 如果真的把 $P$ 加 7863 次，当然也能做，但是太笨了。题目给的 Double and Add 算法就是在利用二进制：
 
@@ -21,32 +21,16 @@ Q = [7863]P
 
 ## 代码
 
-```python
-def scalar_multiplication(P, n, a, p):
-    Q = P
-    R = None
-
-    while n > 0:
-        if n % 2 == 1:
-            R = point_add(R, Q, a, p)
-
-        Q = point_add(Q, Q, a, p)
-        n //= 2
-
-    return R
-```
-
-完整代码见本页下方的 `WP.py` 下载链接。
+<p class="download-row"><a class="download-link" href="./WP.py" download>下载解题代码（WP.py）</a></p>
 
 ## Result
 
-```text
-(9467, 2742)
-crypto{9467,2742}
-```
+最后算出来：
+
+$$
+Q = (9467, 2742)
+$$
 
 ## Flag
 
-```text
 crypto{9467,2742}
-```
