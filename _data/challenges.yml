@@ -45,7 +45,7 @@
     - title: "Micro Transmissions"
       url: "/Elliptic%20Curves/Micro%20Transmissions/"
       group: "Parameter Choice"
-      has_wp: false
+      has_wp: true
       has_attachments: true
     - title: "Elliptic Nodes"
       url: "/Elliptic%20Curves/Elliptic%20Nodes/"
@@ -117,3 +117,4 @@
       group: "Side Channels"
       has_wp: false
       has_attachments: true
+
