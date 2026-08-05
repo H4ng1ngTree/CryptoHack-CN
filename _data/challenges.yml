@@ -40,7 +40,7 @@
     - title: "Exceptional Curves"
       url: "/Elliptic%20Curves/Exceptional%20Curves/"
       group: "Parameter Choice"
-      has_wp: false
+      has_wp: true
       has_attachments: true
     - title: "Micro Transmissions"
       url: "/Elliptic%20Curves/Micro%20Transmissions/"
